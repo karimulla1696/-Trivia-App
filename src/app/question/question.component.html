@@ -1,0 +1,23 @@
+<div class="container-fluid bg text-center">
+    <div class="container box">
+        <h1 class="question">{{currentQuestion.title}}</h1>
+        <select class="form-control input" *ngIf="currentQuestion.id === 1" name="answer1" id="answer1" [(ngModel)]="currentQuestion.answer" #formAnswer="ngModel" required>
+            <option value="">Select any one</option>
+            <option *ngFor="let fav of favs" [value]="fav">{{fav}}</option>
+        </select>
+        <p [hidden]="currentQuestion.id === 2 || (currentQuestion.id === 1 && currentQuestion.answer)" class="text-danger">Please Select One</p>
+        <div class="container bg-custom">
+            <div class="form-check" *ngFor="let colour of colors">
+                <input type="checkbox" class="form-check-input checkbox" id="{{colour}}" value="{{colour}}">
+                <label class="form-check-label check-label" for="{{colour}}">&nbsp;{{colour}}</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input checkbox" id="all" value="all">
+                <label class="form-check-label check-label" for="all">&nbsp;Select all</label>
+            </div>
+        </div>
+        <br>
+        <button class="btn customButton" (click)="next()" [disabled]="!currentQuestion.answer || currentQuestion.answer.length < 2">Next</button>
+    </div>
+    <br>
+</div>

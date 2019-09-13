@@ -1,0 +1,12 @@
+.bg{
+    height: 100vh;
+    background-image: url('https://i.ytimg.com/vi/-MKapbz0GIo/maxresdefault.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px;
+}
+.box {
+    background-color: rgba(105, 110, 104, 0.7);
+    border-radius: 30px;
+    padding: 50px;
+}

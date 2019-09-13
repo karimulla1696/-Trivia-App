@@ -1,0 +1,11 @@
+<div class="container-fluid bg text-center">
+    <div class="container box">
+        <h1 class="question">What is your name?</h1>
+        <input type="text" class="form-control input" id="name" placeholder="Enter Name" [(ngModel)]="name" #formName="ngModel" required>
+        <br>
+        <p [hidden]="formName.valid || formName.pristine" class="text-danger">Name is required</p>
+        <button class="btn customButton" (click)="start()" [disabled]="!formName.valid">Start</button>
+    </div>
+    <br>
+    <button type="button" class="btn btn-primary" routerLink="history">History</button>
+</div>

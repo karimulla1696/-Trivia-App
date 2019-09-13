@@ -1,0 +1,28 @@
+.bg{
+    height: 100vh;
+    background-image: url('https://d2ijzc5gfl7fbn.cloudfront.net/cache/94/b1/94b1e52655d8c80f803799c7fa974405.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px;
+}
+.box {
+    background-color: rgba(105, 110, 104, 0.7);
+    border-radius: 30px;
+    padding: 50px;
+}
+
+.bg-custom {
+    width:200px;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 20px;
+    padding:15px;
+}
+
+.checkbox {
+    width:20px;
+    height:20px;
+}
+.check-label{
+    font-size: 15pt;
+}
