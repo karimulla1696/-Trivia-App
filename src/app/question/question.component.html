@@ -5,17 +5,19 @@
             <option value="">Select any one</option>
             <option *ngFor="let fav of favs" [value]="fav">{{fav}}</option>
         </select>
-        <p [hidden]="currentQuestion.id === 2 || (currentQuestion.id === 1 && currentQuestion.answer)" class="text-danger">Please Select One</p>
-        <div class="container bg-custom">
+        <p [hidden]="currentQuestion.id === 2 || (currentQuestion.id === 1 && currentQuestion.answer)" class="text-danger">Please select one</p>
+        <div class="container bg-custom" *ngIf="currentQuestion.id === 2">
             <div class="form-check" *ngFor="let colour of colors">
-                <input type="checkbox" class="form-check-input checkbox" id="{{colour}}" value="{{colour}}">
+                <input type="checkbox" class="form-check-input checkbox" id="{{colour}}" value="{{colour}}" (change)="updateCheck($event, colour)"
+                [checked]="currentQuestion.answer.includes(colour)">
                 <label class="form-check-label check-label" for="{{colour}}">&nbsp;{{colour}}</label>
             </div>
             <div class="form-check">
-                <input type="checkbox" class="form-check-input checkbox" id="all" value="all">
+                <input type="checkbox" class="form-check-input checkbox" id="all" value="all" (change)="selectAll($event)" [checked]="allChecked">
                 <label class="form-check-label check-label" for="all">&nbsp;Select all</label>
             </div>
         </div>
+        <p [hidden]="currentQuestion.id === 1 || (currentQuestion.id === 2 && currentQuestion.answer.length > 1)" class="text-danger">Please select more than one</p>
         <br>
         <button class="btn customButton" (click)="next()" [disabled]="!currentQuestion.answer || currentQuestion.answer.length < 2">Next</button>
     </div>

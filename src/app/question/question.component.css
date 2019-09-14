@@ -3,6 +3,7 @@
     background-image: url('https://d2ijzc5gfl7fbn.cloudfront.net/cache/94/b1/94b1e52655d8c80f803799c7fa974405.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     padding: 200px;
 }
 .box {

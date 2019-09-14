@@ -5,6 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 9090;
 const routes = require('./routes');
 
+// mongodb connections
 mongoose.connect('mongodb://localhost:27017/trivia', {useNewUrlParser: true});
 
 const db = mongoose.connection;

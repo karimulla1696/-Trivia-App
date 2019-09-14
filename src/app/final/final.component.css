@@ -1,0 +1,29 @@
+.bg{
+    height: 100vh;
+    background-image: url('https://www.bonazcapital.com/wp-content/uploads/2017/07/quarterly-results-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 120px;
+}
+.box {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 30px;
+    padding: 50px;
+}
+
+.wish {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 20pt;
+    font-weight: 600;
+}
+.question {
+    font-size: 23pt;
+    font-weight: 900;
+}
+
+.answer {
+    font-size: 20pt;
+    font-weight: 300;
+}

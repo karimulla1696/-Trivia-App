@@ -1,0 +1,23 @@
+.bg{
+    height: 100vh;
+    background-image: url('https://www.ecsu.edu/academics/department/social-and-behavioral-sciences/history-political-science/history1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 200px;
+    position: fixed;
+    z-index: -100;
+}
+.box {
+    background-color: rgba(105, 110, 104, 0.7);
+    border-radius: 30px;
+    padding: 50px;
+}
+
+.history-box {
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 10px;
+}

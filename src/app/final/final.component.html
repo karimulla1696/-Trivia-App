@@ -1,1 +1,14 @@
-<p>final works!</p>
+<div class="container-fluid bg text-center">
+    <div class="container box text-left">
+        <h1 class="h1">Summary</h1>
+        <div class="container">
+            <p class="wish">Hello "{{formData.Name}}",</p>
+            <p class="h4">Here are the answers selected:</p>
+            <p class="question">Q1: {{formData.Q1}}</p>
+            <p class="answer">A: {{formData.A1}}</p>
+            <p class="question">Q2: {{formData.Q2}}</p>
+            <p class="answer">A: {{formData.A2}}</p>
+        </div>
+        <button class="btn customButton" (click)="submit()">Finish</button>
+    </div>
+</div>

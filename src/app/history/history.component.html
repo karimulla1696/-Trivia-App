@@ -1,1 +1,16 @@
-<p>history works!</p>
+<div class="container-fluid bg"></div>
+<div class="text-center container-fluid">
+    <div class="container box">
+        <h1 class="h1">History</h1>
+        <div class="container bg-white text-left history-box" *ngFor="let data of history; let i = index;">
+            Game {{i+1}}: {{data.CreatedDate}}<br>
+            Name: {{data.Name}}<br>
+            {{data.Q1}}<br>
+            Answer: {{data.A1}}<br>
+            {{data.Q2}}<br>
+            Answers: {{data.A2}}
+        </div>
+    </div>
+    <br>
+    <button type="button" class="btn btn-primary m-10" routerLink="/">Back</button>
+</div>

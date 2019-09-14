@@ -16,6 +16,7 @@ export class SplashComponent implements OnInit {
   name = '';
 
   start(){
+    // storing name in sessionStorage
     sessionStorage.setItem('name', this.name);
     this.router.navigate(['/question/1']);
   }
