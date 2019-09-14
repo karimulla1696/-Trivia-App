@@ -1,7 +1,7 @@
 # Trivia App
 
-Node Version 10X
-NPM Version 6.11.3
+Node Version 10X, 
+NPM Version 6.11.3, 
 Angular Version 8.0.6
 
 ## First Step
