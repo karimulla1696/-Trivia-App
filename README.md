@@ -19,3 +19,8 @@ ng build
 ```
 npm start
 ```
+
+## Start the app in browser
+```
+http://localhost:9090/
+```
