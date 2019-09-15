@@ -7,12 +7,17 @@ Angular Version 8.0.6
 ## First Step
 
 ```
-NPM Install
+clone the project in github link https://github.com/karimulla1696/Trivia.git
 ```
 
 ## Second Step
 ```
-ng build
+npm install
+```
+
+## Third Step
+```
+npm build
 ```
 
 ## Final Step
