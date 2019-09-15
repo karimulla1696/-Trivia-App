@@ -17,7 +17,7 @@ npm install
 
 ## Third Step
 ```
-npm build
+ng build
 ```
 
 ## Final Step
